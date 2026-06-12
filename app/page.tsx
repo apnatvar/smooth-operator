@@ -45,9 +45,9 @@ export default function HomePage() {
               className="grid gap-8 border-t border-foreground/15 pt-7 md:grid-cols-[1fr_auto] md:items-end"
             >
               <p className="max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-                OperatorOS connects your data, tools, files, and workflows into
-                a private intelligence layer built around how your business
-                actually works.
+                Smooth Operator connects your data, tools, files, and workflows
+                into a private intelligence layer built around how your
+                business actually works.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild className="h-11 rounded-none px-5">

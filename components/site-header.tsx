@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 import { MobileSiteNavigation } from "@/components/mobile-site-navigation"
@@ -11,9 +12,14 @@ export function SiteHeader() {
           href="/"
           className="flex min-h-16 shrink-0 items-center px-5 font-semibold tracking-[-0.04em] md:border-r md:border-foreground/20 md:px-8"
         >
-          <span className="mr-2 inline-grid size-5 place-items-center bg-foreground text-[0.55rem] text-background">
-            OS
-          </span>
+          <Image
+            src="/so.webp"
+            alt=""
+            width={20}
+            height={20}
+            className="mr-2 size-5"
+            priority
+          />
           {siteConfig.name}
         </Link>
         <MobileSiteNavigation />

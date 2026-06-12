@@ -5,12 +5,41 @@ import { ArrowRight } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { BackgroundImagePanel } from "@/components/background-image-panel"
 import { Button } from "@/components/ui/button"
-import { capabilities } from "@/lib/site"
+import { capabilities, siteConfig } from "@/lib/site"
+import { coreKeywords, previewImagePath } from "@/lib/site-metadata"
 
 export const metadata: Metadata = {
-  title: "Learn How",
+  title: "How the Private AI Operating Layer Works",
   description:
-    "Explore the OperatorOS architecture: private deployment, orchestration, integrations, retrieval, agent documentation, and ongoing maintenance.",
+    "Explore the Smooth Operator architecture for local-first deployment, private retrieval, tool orchestration, Tally Excel Odoo integrations, agent documentation, and maintenance.",
+  keywords: [
+    ...coreKeywords,
+    "private AI OS architecture for business data",
+    "local-first AI orchestration with tool calling",
+    "on-prem retrieval augmented generation for SMEs",
+    "Tally Excel Odoo AI integration architecture",
+    "agents.md skills.md business operator instructions",
+    "private company brain deployment architecture",
+  ],
+  alternates: {
+    canonical: "/learn-how",
+  },
+  openGraph: {
+    type: "article",
+    url: "/learn-how",
+    siteName: siteConfig.name,
+    title: "How the Private AI Operating Layer Works",
+    description:
+      "A detailed architecture for local-first company brains, tool orchestration, business integrations, governance, and maintenance.",
+    images: [previewImagePath],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How the Private AI Operating Layer Works",
+    description:
+      "The architecture behind a private, business-specific AI operator.",
+    images: [previewImagePath],
+  },
 }
 
 const implementationPhases = [
@@ -46,7 +75,7 @@ export default function LearnHowPage() {
         >
           <div className="flex flex-col justify-between p-6 sm:p-10 lg:p-12">
             <div data-animate className="flex items-center justify-between">
-              <p className="label">OperatorOS Architecture</p>
+              <p className="label">Smooth Operator Architecture</p>
               <p className="font-mono text-[0.64rem] text-muted-foreground">
                 STACK / 006
               </p>
@@ -70,9 +99,10 @@ export default function LearnHowPage() {
               data-animate
               className="max-w-2xl border-t border-foreground/15 pt-7 text-sm leading-7 text-muted-foreground sm:text-base"
             >
-              OperatorOS is implementation-led. We design a private operating
-              environment around a specific business workflow, then connect the
-              minimum dependable set of data sources and tools needed to run it.
+              Smooth Operator is implementation-led. We design a private
+              operating environment around a specific business workflow, then
+              connect the minimum dependable set of data sources and tools
+              needed to run it.
             </p>
           </div>
           <BackgroundImagePanel

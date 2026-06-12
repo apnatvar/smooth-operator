@@ -1,8 +1,9 @@
 export const siteConfig = {
-  name: "OperatorOS",
-  title: "OperatorOS | AI Operating System for Growing Businesses",
+  name: "Smooth Operator",
+  shortName: "SO",
+  title: "Smooth Operator | Private AI OS and Company Brain",
   description:
-    "Private AI systems for founders, manufacturers, wholesalers, startups, and enterprise teams. Built with orchestration, integrations, hosting, on-prem deployment, and maintenance.",
+    "A local-first company brain and private AI operating system for founders, manufacturers, wholesalers, startups, enterprise teams, and personal workflows.",
 } as const
 
 export const navigation = [

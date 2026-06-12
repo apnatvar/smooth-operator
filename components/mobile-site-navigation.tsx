@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ArrowUpRight } from "lucide-react"
@@ -31,9 +32,13 @@ function MobileSidebarContent() {
       <Sidebar side="right" className="border-l border-sidebar-border">
         <SidebarHeader className="border-b border-sidebar-border p-5">
           <div className="flex min-h-12 items-center">
-            <span className="mr-2 inline-grid size-5 place-items-center bg-sidebar-foreground text-[0.55rem] text-sidebar">
-              OS
-            </span>
+            <Image
+              src="/so.webp"
+              alt=""
+              width={20}
+              height={20}
+              className="mr-2 size-5"
+            />
             <span className="font-semibold tracking-[-0.04em]">
               {siteConfig.name}
             </span>
